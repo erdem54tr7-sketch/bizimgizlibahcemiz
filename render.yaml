@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: bizimgizlibahcemiz
+    runtime: node
+    plan: free
+    buildCommand: npm install --include=dev && npm run build
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: ADMIN_USER
+        value: erdem
+      - key: ADMIN_PASS
+        value: bahce2026
+      - key: ADMIN_NAME
+        value: Erdem
+      - key: PARTNER_USER
+        value: zeynep
+      - key: PARTNER_PASS
+        value: 11.11.2026
+      - key: PARTNER_NAME
+        value: Zeynep
